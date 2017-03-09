@@ -1,7 +1,9 @@
 {
   "name": "reverse-element",
+  "version": "0.0.1",
   "description": "Reverses child elements based on property - helpful for accessibility",
   "main": "reverse-element.html",
+  "license": "MIT",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"
   },
