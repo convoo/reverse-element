@@ -1,0 +1,48 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`reverse-element`
+Reverses children elements based on property - helpful for accessibility
+
+@demo demo/index.html 
+-->
+
+<dom-module id="reverse-element">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <slot></slot>
+    </template>
+
+    <script>
+        Polymer({
+
+            is: 'reverse-element',
+
+            properties: {
+                /**
+                 *  Determines whether to reverse content or not
+                 */
+                reverse: {
+                    type: Boolean,
+                    value: false,
+                    observer: "_reverse"
+                },
+            },
+            _reverse: function (newVal, oldVal) {
+                if (newVal != oldVal && oldVal != undefined) {
+                    console.log(this.childNodes);
+                    // loop from the bottom and remove 
+                    for (var i = this.childNodes.length - 1; i >= 0; i--) {
+                        x = this.removeChild(this.childNodes[i]);
+                        this.appendChild(x);
+                    }
+                }
+            }
+
+        });
+    </script>
+</dom-module>
