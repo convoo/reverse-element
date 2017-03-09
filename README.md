@@ -35,6 +35,7 @@ Easily reverse the order of children elements in the dom while maintaining grand
 ```
 <custom-element-demo>
     <template>
+        <link rel="import" href="../paper-toggle-button/paper-toggle-button.html">
         <link rel="import" href="reverse-element.html">
         <div>
             <template is="dom-bind">
@@ -72,6 +73,7 @@ Easily reverse the order of children elements in the dom while maintaining grand
 ```
 <custom-element-demo>
     <template>
+        <link rel="import" href="../paper-toggle-button/paper-toggle-button.html">
         <link rel="import" href="reverse-element.html">
         <div>
             <template is="dom-bind">
