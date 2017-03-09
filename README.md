@@ -1,7 +1,7 @@
 # Reverse-Element
 
 <p align="center">
-  <img alt="login-fire" src="ReverseElement.png" width="200">
+  <img alt="reverse-element" src="ReverseElement.png" width="200">
 </p>
 
 <p align="center">
