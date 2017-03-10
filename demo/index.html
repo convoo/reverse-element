@@ -22,7 +22,7 @@
 
 <body>
     <div class="vertical-section-container centered">
-        <h3>Basic odd reverse-element demo</h3>
+        <h3>Toggleable reverse-element demo</h3>
         <demo-snippet>
             <template is="dom-bind">
 
@@ -51,13 +51,10 @@
     </div>
 
     <div class="vertical-section-container centered">
-        <h3>Basic even reverse-element demo</h3>
+        <h3>Reversed reverse-element demo</h3>
         <demo-snippet>
             <template is="dom-bind">
-
-                <paper-toggle-button checked="{{reverse2}}" toggles> Toggle Reverse</paper-toggle-button>
-
-                <reverse-element reverse="{{reverse2}}">
+                <reverse-element reverse>
                     <div>
                         <h3>First</h3>
                         <paper-input label="First"></paper-input>

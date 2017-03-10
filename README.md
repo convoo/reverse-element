@@ -30,7 +30,7 @@ Easily reverse the order of children elements in the dom while maintaining grand
 <link rel="import" href="../../reverse-element/reverse-element.html">
 ```
 
-### Odd number of children
+### Toggleable Reverse Element
 <!--
 ```
 <custom-element-demo>
@@ -70,13 +70,12 @@ Easily reverse the order of children elements in the dom while maintaining grand
 </reverse-element>
 ```
 
-### Even number of children
+### Reversed
 
 <!--
 ```
 <custom-element-demo>
     <template>
-        <link rel="import" href="../paper-toggle-button/paper-toggle-button.html">
         <link rel="import" href="../paper-input/paper-input.html">
         <link rel="import" href="reverse-element.html">
         <div>
@@ -89,9 +88,7 @@ Easily reverse the order of children elements in the dom while maintaining grand
 ```
 -->
 ```html
-<paper-toggle-button checked="{{reverse}}"> Toggle Reverse</paper-toggle-button>
-
-<reverse-element reverse="{{reverse}}">
+<reverse-element reverse>
 <div>
     <h3>First</h3>
     <paper-input label="First"></paper-input>
