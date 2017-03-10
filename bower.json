@@ -1,6 +1,6 @@
 {
   "name": "reverse-element",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Reverses child elements based on property - helpful for accessibility",
   "main": "reverse-element.html",
   "license": "MIT",
@@ -12,6 +12,7 @@
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
     "web-component-tester": "^4.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
-    "paper-toggle-button": "PolymerElements/paper-toggle-button#^1.3.0"
+    "paper-toggle-button": "PolymerElements/paper-toggle-button#^1.3.0",
+    "paper-input": "^1.1.23"
   }
 }

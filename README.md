@@ -24,7 +24,7 @@ bower install convoo/reverse-element --save
 
 ## \<reverse-element\>
 
-Easily reverse the order of children elements in the dom while maintaining grandchildren order.
+Easily reverse the order of children elements in the dom while maintaining grandchildren order. With inputs and other elements that you use `tabindex` with, you need to change the dom order to reverse the tab order and not just change the visual order using CSS.
 
 ```html
 <link rel="import" href="../../reverse-element/reverse-element.html">
@@ -36,6 +36,7 @@ Easily reverse the order of children elements in the dom while maintaining grand
 <custom-element-demo>
     <template>
         <link rel="import" href="../paper-toggle-button/paper-toggle-button.html">
+        <link rel="import" href="../paper-input/paper-input.html">
         <link rel="import" href="reverse-element.html">
         <div>
             <template is="dom-bind">
@@ -52,17 +53,19 @@ Easily reverse the order of children elements in the dom while maintaining grand
 <reverse-element reverse="{{reverse}}">
 <div>
     <h3>First</h3>
+    <paper-input label="First"></paper-input>
 </div>
 <div>
     <h3>Second</h3>
+    <paper-input label="Second"></paper-input>
 </div>
 <div>
     <h3>
-    Third
+        Third
     </h3>
-    <p>Grandchild 2</p>
-    <p>Grandchild 3</p>
-    <p>Grandchild 4</p>
+    <paper-input label="Third Part 1"></paper-input>
+    <paper-input label="Third Part 2"></paper-input>
+    <paper-input label="Third Part 3"></paper-input>
 </div>
 </reverse-element>
 ```
@@ -74,6 +77,7 @@ Easily reverse the order of children elements in the dom while maintaining grand
 <custom-element-demo>
     <template>
         <link rel="import" href="../paper-toggle-button/paper-toggle-button.html">
+        <link rel="import" href="../paper-input/paper-input.html">
         <link rel="import" href="reverse-element.html">
         <div>
             <template is="dom-bind">
@@ -90,20 +94,23 @@ Easily reverse the order of children elements in the dom while maintaining grand
 <reverse-element reverse="{{reverse}}">
 <div>
     <h3>First</h3>
+    <paper-input label="First"></paper-input>
 </div>
 <div>
     <h3>Second</h3>
+    <paper-input label="Second"></paper-input>
 </div>
 <div>
     <h3>
-    Third
+        Third
     </h3>
-    <p>Grandchild 2</p>
-    <p>Grandchild 3</p>
-    <p>Grandchild 4</p>
+    <paper-input label="Third Part 1"></paper-input>
+    <paper-input label="Third Part 2"></paper-input>
+    <paper-input label="Third Part 3"></paper-input>
 </div>
 <div>
     <h3>Fourth</h3>
+    <paper-input label="Fourth"></paper-input>
 </div>
 </reverse-element>
 ```
