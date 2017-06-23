@@ -1,6 +1,6 @@
 {
     "name": "reverse-element",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Reverses child elements based on property - helpful for accessibility",
     "main": "reverse-element.html",
     "license": "MIT",
